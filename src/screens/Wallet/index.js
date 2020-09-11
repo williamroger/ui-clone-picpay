@@ -2,6 +2,8 @@ import React from 'react';
 
 import { Feather, MaterialCommunityIcons } from '@expo/vector-icons';
 
+import { Switch } from 'react-native';
+
 import {
   Wrapper,
   Header,
@@ -15,6 +17,8 @@ import {
   Actions,
   Action,
   ActionLabel,
+  UseBalance,
+  UseBalanceTitle,
 } from "./styles";
 
 export default function Wallet() {
@@ -48,6 +52,14 @@ export default function Wallet() {
           </Actions>
         </HeaderContainer>
       </Header>
+
+      <UseBalance>
+        <UseBalanceTitle>
+          Usar saldo ao pagar
+        </UseBalanceTitle>
+
+        <Switch />
+      </UseBalance>
     </Wrapper>
   );
 }
