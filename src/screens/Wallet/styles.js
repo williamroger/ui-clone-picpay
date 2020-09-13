@@ -140,3 +140,20 @@ export const AddLabel = styled.Text`
   font-weight: bold;
   margin-left: 15px; 
 `;
+
+export const UseTicketContainer = styled.View`
+  align-items: center;
+  margin-top: 25px;
+`;
+
+export const UseTicketButton = styled.TouchableOpacity`
+  flex-direction: row;
+`;
+
+export const UseTicketLabel = styled.Text`
+  color: #0db060;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 15px;
+  text-decoration-line: underline;
+`;

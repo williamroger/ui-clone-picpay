@@ -29,6 +29,9 @@ import {
   Img,
   AddButton,
   AddLabel,
+  UseTicketContainer,
+  UseTicketButton,
+  UseTicketLabel,
 } from "./styles";
 
 import creditCard from '../../images/credit-card.png';
@@ -89,11 +92,21 @@ export default function Wallet() {
 
           <AddButton>
             <AntDesign name="pluscircleo" size={30} color="#0db060" />
-            <AddLabel>
-              Adicionar cartão de crédito
-            </AddLabel>
+            <AddLabel>Adicionar cartão de crédito</AddLabel>
           </AddButton>
         </Card>
+
+        <UseTicketContainer>
+          <UseTicketButton>
+            <MaterialCommunityIcons
+              name="ticket-outline"
+              size={20}
+              color="#0db060"
+            />
+
+            <UseTicketLabel>Usar código promocional</UseTicketLabel>
+          </UseTicketButton>
+        </UseTicketContainer>
       </PaymentMethods>
     </Wrapper>
   );
